@@ -64,3 +64,41 @@ class Cube{
 		}
 		return $sum;
 	}
+
+
+	 //Hace un offset de los indices del arreglo
+
+	private function less_one($position){
+		return $position - 1;
+	}
+
+
+	 //Valida si 1 <= x,y,z <= N
+
+	private function validate_coordinates($x, $y, $z){
+		return 	(1 <= $x) && ($x <= count($this->cube)) &&
+				(1 <= $y) && ($y <= count($this->cube)) &&
+				(1 <= $z) && ($z <= count($this->cube));
+
+	}
+
+
+	  //Valida si -10^9 <= $value <= 10^9
+
+	private function validate_value($value){
+		return (self::MIN_VALUE <= $value) && (self::MAX_VALUE <= pow(10, 9));
+	}
+
+	/*
+	 * Valida
+	 * 	1 <= x1 <= x2 <= N
+	 *	1 <= y1 <= y2 <= N
+	 *	1 <= z1 <= z2 <= N
+	 *
+	 */
+	private function validate_range($x1, $y1, $z1, $x2, $y2, $z2){
+		return 	$this->validate_coordinates($x1, $y1, $z1) &&
+				$this->validate_coordinates($x2, $y2, $z2) &&
+				$x1 <= $x2 && $y1 <= $y2 && $z1 <= $z2;
+	}
+}
