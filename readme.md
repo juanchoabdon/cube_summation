@@ -1,7 +1,7 @@
 
 Cube Summation
 ------------------------
-
+Aplicación desarrollada en laravel, renderiza la vista que es controlada por angularjs
 ![App](https://s23.postimg.org/z6qwstikb/Screen_Shot_2017_01_07_at_8_22_02_PM.png)
 
 
