@@ -18,3 +18,7 @@ La capa del cliente es ejecutada en el navegador web y desarrollada en angularjs
  - **Cube.php:** Model que contiente los metodos que ejecutan las operaciones que solucionan el problema
  
  - **CubeCtrl.php:** Es el controlador que se encarga de procesar las peticiones del usuario, requiriendo al model **Cube.php** para realizar operaciones y retornar los datos obtenidos mediante json.
+
+
+
+![App](https://s28.postimg.org/mkif6hei5/Screen_Shot_2017_01_07_at_8_22_31_PM.png)
