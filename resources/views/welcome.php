@@ -87,19 +87,19 @@
 
                               <div class="row">
                    <div class="input-field col s6">
-                     <select id="op_{{$index}}" ng-model="operation.operation_name">
-
+                     <select class="browser-default" id="op_{{$index}}" ng-model="operation.operation_name">
+                       <option value="" disabled selected>Operación</option>
                        <option value="query">QUERY</option>
                        <option value="update">UPDATE</option>
-    </select>
-    <label for="op_{{$index}}">Operación</label>
+                     </select>
+
                     </div>
                    <div class="input-field col s6">
 
 
 
                      <input id="params_{{$index}}" type="text" ng-model="operation.params" />
-                        <label for="params_{{$index}}"> Parametro </label>
+                        <label for="params_{{$index}}"> Parametros </label>
                       </div>
                        </div>
 
