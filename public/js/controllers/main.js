@@ -21,4 +21,11 @@ app.controller("MainController", function($scope, $http, PROCESS_URL, $sce){
 
 	}
 
+	$scope.summation = function(){
+		console.log($scope.test_cases);
+		$http.post(PROCESS_URL, {"inputs": $scope.test_cases}).success(
+			function(response){
+				$scope.output = $sce.trustAsHtml(response.output.replace(/,/g, "<br/>"));
+			});
+	}
 })
